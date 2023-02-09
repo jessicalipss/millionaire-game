@@ -1,0 +1,48 @@
+var question = [
+  ['What is the boiling point temperature (water)?','50 degree celsius','100 degree celsius','150 degree celsius','200 degree celsius','100 degree celsius'],
+  ['Which fruit is associated with Isaac Newton?','Apple','Pear','Banana','Pineapple','Apple'],
+  ['Which one of the following scientists is known for his contributions to the science of evolution?','Marie Curie','Thomas Edison','Stephen Hawking','Charles darwin','Charles darwin'],
+  ['Arnold Schwarzenegger was the governor of which American state?','Florida','Texas','Montana','California','California'],
+  ['Which building was not attacked on 9/11?','World Trade Center South Tower','World Trade Center North Tower','The Pentagon','Statue of Liberty','Statue of Liberty'],
+  ['What is the capital city of Australia?','Sydney','Melbourne','Canberra','Brisbane','Canderra']
+]
+
+var num = Math.floor(Math.random() * 6);
+for (var r=num; r < question.length; r ++){
+
+for (var c=0; c < (question[r].length - 1); c++  ){
+  document.getElementById('quest').innerHTML = question [r][0] +"<br>" ;
+  document.getElementById("rad" + x).value = question [r][c]
+r=7
+}
+}
+var question = [
+  ['What is the boiling point temperature (water)?','50 degree celsius','100 degree celsius','150 degree celsius','200 degree celsius','100 degree celsius'],
+  ['Which fruit is associated with Isaac Newton?','Apple','Pear','Banana','Pineapple','Apple'],
+  ['Which one of the following scientists is known for his contributions to the science of evolution?','Marie Curie','Thomas Edison','Stephen Hawking','Charles darwin','Charles darwin'],
+  ['Arnold Schwarzenegger was the governor of which American state?','Florida','Texas','Montana','California','California'],
+  ['Which building was not attacked on 9/11?','World Trade Center South Tower','World Trade Center North Tower','The Pentagon','Statue of Liberty','Statue of Liberty'],
+  ['What is the capital city of Australia?','Sydney','Melbourne','Canberra','Brisbane','Canderra']
+]
+
+var num = Math.floor(Math.random() * 6);
+for (var r=num; r < question.length; r ++){
+  var x = 1;
+for (var c=0; c < (question[r].length); c++  ){
+  document.getElementById('quest').innerHTML = question [r][0] +"<br>" ;
+  document.getElementById("rad" + c).value = question [r][x];
+  document.getElementById("quest" + c).innerHTML = question [r][x];
+  x++;
+
+}
+r = -1;
+}
+
+function chkans() {
+ for (var x=0; x < question.length; x++){
+  if (document.getElementById("rad" + x).checked){
+   document.getElementById("rad" + x).value == question[num][5];
+   document.getElementById("success").innerHTML = "You won"
+  }
+}
+}

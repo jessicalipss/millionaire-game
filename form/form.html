@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel ="stylesheet" href="form.css">
+  <link rel ="stylesheet" href="home.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
+  </style>
+  <style>
+    body{
+      background-image: url('haeder.jpg');
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+
+
+  <h1>Personal Information</h1>
+  <form class="" action="index.html" method="post">
+    <label for="Fname">First name :</label>
+    <input type="text" name="cpassw">
+    <br><br>
+ <label for="Lname">Last name :</label>
+<input type="text" name="Lname" >
+<br><br>
+<label for="Nic">National identification number:</label>
+<input type="text" name="Nic">
+<br><br>
+<div id="specialbutton">
+<label for="Nic">Sex:</label>
+<input type="checkbox" id="male" name="Male" value="male">
+<label for="Male">Male</label>
+<input type="checkbox" id="fmale" name="Female" value="female">
+<label for="Female">Female</label>
+</div>
+  </form>
+  <h1>Contact Information</h1>
+  <form class="" action="index.html" method="post">
+    <label for="Phonenum">Phone :</label>
+ <input type="text" name="Phonenum" >
+ <br><br>
+ <label for="ddlcoun">Country: </label>
+ <select id="ddlcoun">
+   <option value="mur">Mauritius</option>
+   <option value="us">America</option>
+   <option value="UK">United kingdom</option>
+   <option value="fr">France</option>
+ </select>
+ <br><br>
+<label for="state">State:</label>
+<input type="text" name="stste">
+
+  </form>
+  <h1>Account Information</h1>
+  <form class="" action="index.html" method="post">
+    <label for="uname">Username :</label>
+ <input type="text" name="uname" >
+ <br><br>
+<label for="passw">Password:</label>
+<input type="text" name="passw">
+<br><br>
+<label for="cpassw">Confirm password:</label>
+<input type="text" name="cpassw">
+<br><br>
+<div id="specialbutton" id ="center" >
+<input type = "button" class="button-63" value = "SUBMIT">
+<input type = "button" class="button-63" value = "RESET">
+<button class="button-63" role="button">LOGIN</button>
+</div>
+  </form>
+  </div>
+</body>
+</html>

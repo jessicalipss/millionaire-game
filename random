@@ -1,0 +1,85 @@
+function randomNum(){
+  var rand =  Math.floor(Math.random() * 14 );
+  console.log(rand)
+function verify(){
+  for (var s= 0; s <numbers.length; s++){
+    var check1 = 0 ;
+    if(numbers[s]==rand){
+      check1 =1;
+        return  check1;
+    }
+
+  }
+}
+var checknum = verify();
+console.log(checknum);
+console.log(numbers);
+if(checknum == 1){
+   numbers.splice((rand),1)
+   console.log(rand);
+  }
+while(checknum !=1){
+ rand =  Math.floor(Math.random() * 14 );
+checknum = verify();
+}
+  }
+  console.log(numbers);
+  console.log(rand);
+return rand;
+}
+
+function randomNum(){
+var rand =  Math.floor(Math.random() * 14 );
+console.log(numbers);
+function verify(){
+  for (var s= 0; s <numbers.length; s++){
+    var check1 = 0 ;
+    if(numbers[s]==rand){
+      check1 = s;
+      break;
+    } else{
+     check1 = -1;
+}
+  }
+    return  check1;
+}
+
+var checknum = verify();
+while(checknum == -1){
+ rand =  Math.floor(Math.random() * 14 );
+checknum = verify();
+return rand;
+}
+  var counter = 0;
+console.log(checknum);
+ numbers.splice(checknum,1)
+  console.log(numbers);
+  console.log(rand);
+  var counter =0
+  counter --;
+return rand;
+}
+
+
+function randomNum(){
+  var rand =  Math.floor(Math.random() * 14 );
+var checknum = numbers.indexOf(numbers[rand]);
+if(checknum != -1){
+   numbers.splice((rand),1)
+   console.log(rand)
+  }
+while(checknum == -1){
+ rand =  Math.floor(Math.random() * 14 );
+if(rand == numbers[rand]){
+ numbers.splice((rand),1)
+ console.log(rand)
+}
+
+  }
+  console.log(rand);
+return rand;
+}
+if(numbers.length < 15){
+  $("#msgalert1").show();
+    $("#msgalert1 strong").html("<h1>congratulation</h1><br> <p>You won $10000000 </p>");
+}
